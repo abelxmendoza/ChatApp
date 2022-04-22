@@ -13,7 +13,7 @@ const Sidebar = ({ user, setUser }) => {
         <Wrapper>
 
             <LogoContainer>
-                <img src = {cpLogo} alt = 'cp logo'/>
+                <img src = {user.avatar} alt = {user.name}/>
             </LogoContainer>
             <SidebarIcons>
                 <SidebarIcon onClick = {() => setActiveIcon('inbox')}>

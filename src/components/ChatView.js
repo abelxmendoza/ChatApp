@@ -129,7 +129,8 @@ const sendMessage = async e => {
         <MessageWrapper>
             <Messages>
                 {messages.map((message, index) => {
-                        <>
+                        
+                        return<>
                             {message.email === user.email ? (
                                     <SentMessage key = {index} message = {message} />
                                 ) : (
